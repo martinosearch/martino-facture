@@ -11,12 +11,10 @@ import javax.validation.constraints.NotNull;
 import org.joda.time.DateTime;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "table_invoice")
 @Data
-@NoArgsConstructor
 public class Invoice {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
