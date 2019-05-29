@@ -9,8 +9,8 @@ import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.martino.proxies.AnalyseProxy;
-import com.martino.proxies.ClientProxy;
+import com.martino.proxies.TestProxy;
+import com.martino.proxies.PatientProxy;
 import com.martino.services.NumberToLetters;
 import com.martino.services.OrderService;
 import com.martino.services.SettingService;
@@ -35,10 +35,10 @@ public class InvoiceReportModel {
 	private SettingService settingService;
 
 	@Autowired
-	private AnalyseProxy analyseProxy;
+	private TestProxy analyseProxy;
 
 	@Autowired
-	private ClientProxy clientProxy;
+	private PatientProxy clientProxy;
 
 	private DateTimeFormatter formatter;
 

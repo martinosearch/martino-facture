@@ -12,11 +12,11 @@ import com.martino.models.ClientBean;
 
 @FeignClient(name = "martino-client", url = "localhost:9002")
 @ManagedBean
-public interface ClientProxy {
+public interface PatientProxy {
 
-	@GetMapping(value = "/client/liste")
+	@GetMapping(value = "/patient/liste")
 	List<ClientBean> list();
 
-	@GetMapping(value = "/client/info/{id}")
-	ClientBean findOne(@PathVariable("id") Long long1);
+	@GetMapping(value = "/patient/info/{id}")
+	ClientBean findOne(@PathVariable("id") Long id);
 }

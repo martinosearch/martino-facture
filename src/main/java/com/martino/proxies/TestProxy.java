@@ -12,11 +12,11 @@ import com.martino.models.AnalyseBean;
 
 @FeignClient(name = "martino-analyse", url = "localhost:9001")
 @ManagedBean
-public interface AnalyseProxy {
+public interface TestProxy {
 
-	@GetMapping(value = "/analyse/liste")
+	@GetMapping(value = "/test/liste")
 	List<AnalyseBean> list();
 
-	@GetMapping(value = "/analyse/info/{id}")
+	@GetMapping(value = "/test/info/{id}")
 	AnalyseBean findOne(@PathVariable("id") Long long1);
 }
